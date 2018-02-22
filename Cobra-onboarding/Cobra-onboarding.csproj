@@ -149,6 +149,7 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\CustomerController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -158,10 +159,27 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>cobraModel.Context.tt</DependentUpon>
     </Compile>
+    <Compile Include="Models\cobraModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>cobraModel.tt</DependentUpon>
+    </Compile>
     <Compile Include="Models\cobraModel.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>cobraModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OrderDetail.cs">
+      <DependentUpon>cobraModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OrderHeader.cs">
+      <DependentUpon>cobraModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Person.cs">
+      <DependentUpon>cobraModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Product.cs">
+      <DependentUpon>cobraModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -175,6 +193,12 @@
     <Content Include="Models\cobraModel.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <LastGenOutput>cobraModel.Context.cs</LastGenOutput>
+      <DependentUpon>cobraModel.edmx</DependentUpon>
+    </Content>
+    <Content Include="Models\cobraModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>cobraModel.edmx</DependentUpon>
+      <LastGenOutput>cobraModel.cs</LastGenOutput>
     </Content>
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -185,9 +209,9 @@
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>cobraModel.Designer.cs</LastGenOutput>
     </EntityDeploy>
-    <None Include="Models\cobraModel.edmx.diagram">
+    <Content Include="Models\cobraModel.edmx.diagram">
       <DependentUpon>cobraModel.edmx</DependentUpon>
-    </None>
+    </Content>
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
@@ -213,6 +237,11 @@
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Customer\Create.cshtml" />
+    <Content Include="Views\Customer\Delete.cshtml" />
+    <Content Include="Views\Customer\Details.cshtml" />
+    <Content Include="Views\Customer\Edit.cshtml" />
+    <Content Include="Views\Customer\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

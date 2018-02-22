@@ -65,3 +65,7 @@ c:\users\owner\documents\visual studio 2017\Projects\Cobra-onboarding\Cobra-onbo
 c:\users\owner\documents\visual studio 2017\Projects\Cobra-onboarding\Cobra-onboarding\obj\Debug\Cobra-onboarding.csprojResolveAssemblyReference.cache
 c:\users\owner\documents\visual studio 2017\Projects\Cobra-onboarding\Cobra-onboarding\obj\Debug\Cobra-onboarding.dll
 c:\users\owner\documents\visual studio 2017\Projects\Cobra-onboarding\Cobra-onboarding\obj\Debug\Cobra-onboarding.pdb
+c:\users\owner\documents\visual studio 2017\Projects\Cobra-onboarding\Cobra-onboarding\bin\EntityFramework.dll
+c:\users\owner\documents\visual studio 2017\Projects\Cobra-onboarding\Cobra-onboarding\bin\EntityFramework.SqlServer.dll
+c:\users\owner\documents\visual studio 2017\Projects\Cobra-onboarding\Cobra-onboarding\bin\EntityFramework.xml
+c:\users\owner\documents\visual studio 2017\Projects\Cobra-onboarding\Cobra-onboarding\bin\EntityFramework.SqlServer.xml
